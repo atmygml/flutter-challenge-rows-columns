@@ -12,39 +12,33 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Column(
+          child: Row(
             //crossAxisAlignment: CrossAxisAlignment.end,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
               Container(
-                height: 100.0,
                 width: 100.0,
-                margin: EdgeInsets.symmetric(vertical: 20.0, horizontal: 10.0),
-                padding: EdgeInsets.all(10.0),
-                color: Colors.white,
-                child: Text('Container 1 - Hello.... again'),
-              ),
-              Container(
-                height: 100.0,
-                width: 100.0,
-                margin: EdgeInsets.symmetric(vertical: 20.0, horizontal: 10.0),
-                padding: EdgeInsets.all(10.0),
-                color: Colors.blue,
-                child: Text('Container 2'),
-              ),
-              SizedBox(
-                height: 30.0,
-              ),
-              Container(
-                height: 100.0,
-                width: 100.0,
-                margin: EdgeInsets.symmetric(vertical: 20.0, horizontal: 10.0),
-                padding: EdgeInsets.all(10.0),
                 color: Colors.red,
-                child: Text('Container 2'),
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Container(
+                    width: 100.0,
+                    height: 100.0,
+                    color: Colors.yellow,
+                  ),
+                  Container(
+                    width: 100.0,
+                    height: 100.0,
+                    color: Colors.green,
+                  ),
+                ],
               ),
               Container(
-                width: double.infinity,
+                width: 100.0,
+                color: Colors.blue,
               ),
             ],
           ),
